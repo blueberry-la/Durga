@@ -83,12 +83,12 @@ export default function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
-            className="p-8 rounded-2xl border border-white/10 bg-[#0d0d12] hover:border-red-600/40 transition-all duration-300 space-y-6"
+            className="p-5 sm:p-8 rounded-2xl border border-white/10 bg-[#0d0d12] hover:border-red-600/40 transition-all duration-300 space-y-6"
           >
             {/* Header Info Bar */}
-            <div className="flex flex-wrap items-start justify-between gap-4 border-b border-white/10 pb-6">
+            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-white/10 pb-6">
               <div>
-                <div className="flex items-center gap-3 mb-2">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2">
                   <span className={`font-mono text-[11px] font-bold px-3 py-1 rounded-full border ${exp.badgeStyle}`}>
                     {exp.badge}
                   </span>
@@ -103,8 +103,8 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-2 font-mono text-xs text-neutral-300 px-4 py-2 rounded-xl bg-neutral-900 border border-white/10">
-                <Calendar className="w-4 h-4 text-red-500" />
+              <div className="flex items-center gap-2 font-mono text-xs text-neutral-300 px-4 py-2 rounded-xl bg-neutral-900 border border-white/10 w-fit">
+                <Calendar className="w-4 h-4 text-red-500 shrink-0" />
                 <span>{exp.period}</span>
               </div>
             </div>

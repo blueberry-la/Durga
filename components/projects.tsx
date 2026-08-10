@@ -167,21 +167,21 @@ export default function Projects() {
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               transition={{ type: "spring", stiffness: 350, damping: 25 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-full max-w-2xl p-8 sm:p-12 rounded-3xl border border-red-600/40 bg-[#0f0f15] shadow-[0_25px_70px_rgba(0,0,0,0.95)] space-y-6 relative"
+              className="w-full max-w-2xl p-5 sm:p-8 md:p-12 rounded-3xl border border-red-600/40 bg-[#0f0f15] shadow-[0_25px_70px_rgba(0,0,0,0.95)] space-y-6 relative max-h-[85vh] overflow-y-auto"
             >
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-6 right-6 p-3 rounded-full border border-white/10 bg-neutral-900 text-neutral-400 hover:text-white hover:border-red-500 transition-colors"
+                className="absolute top-4 right-4 sm:top-6 sm:right-6 p-2.5 sm:p-3 rounded-full border border-white/10 bg-neutral-900 text-neutral-400 hover:text-white hover:border-red-500 transition-colors"
                 aria-label="Close project modal"
               >
                 <X className="w-5 h-5" />
               </button>
 
-              <div className="font-mono text-xs text-red-500 font-bold uppercase tracking-wider">
+              <div className="font-mono text-xs text-red-500 font-bold uppercase tracking-wider pr-8">
                 {selectedProject.num} / PROJECT SHOWCASE
               </div>
 
-              <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white">
+              <h3 className="font-display text-2xl sm:text-4xl font-extrabold text-white">
                 {selectedProject.name}
               </h3>
 
@@ -191,7 +191,7 @@ export default function Projects() {
                 <div className="font-mono text-xs text-red-400 pt-1">ROLE: {selectedProject.role}</div>
               </div>
 
-              <p className="text-neutral-300 text-base leading-relaxed">
+              <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
                 {selectedProject.details}
               </p>
 
@@ -206,11 +206,11 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-white/10 flex items-center justify-between gap-4">
+              <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <span className="font-mono text-xs text-neutral-500">Easily edit this placeholder in components/projects.tsx</span>
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="px-8 py-3 rounded-xl bg-red-600 text-white font-mono text-xs font-bold uppercase hover:bg-red-700 transition-colors"
+                  className="w-full sm:w-auto px-8 py-3 rounded-xl bg-red-600 text-white font-mono text-xs font-bold uppercase hover:bg-red-700 transition-colors"
                 >
                   CLOSE
                 </button>

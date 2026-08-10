@@ -90,13 +90,15 @@ html {
 
 /* High Contrast Serif Typography Clamp Helpers */
 .hero-clamp-serif {
-  font-size: clamp(3.5rem, 12vw, 13rem);
-  line-height: 0.88;
+  font-size: clamp(2.2rem, 9.5vw, 12rem);
+  line-height: 0.92;
+  overflow-wrap: break-word;
 }
 
 .section-clamp-serif {
-  font-size: clamp(2.6rem, 8vw, 8rem);
-  line-height: 0.92;
+  font-size: clamp(1.75rem, 6.5vw, 7.5rem);
+  line-height: 0.95;
+  overflow-wrap: break-word;
 }
 
 /* Media Query Rules to Disable Desktop Cursor / Heavy Effects on Touch Screens */

@@ -29,7 +29,7 @@ export default function About() {
       </h2>
 
       {/* Personal Statements Badge Strip */}
-      <div className="flex flex-wrap gap-4 mb-16">
+      <div className="flex flex-wrap gap-2.5 sm:gap-4 mb-12 sm:mb-16">
         {personalStatements.map((stmt, idx) => (
           <motion.div
             key={stmt}
@@ -37,7 +37,7 @@ export default function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: idx * 0.1 }}
-            className="px-6 py-3 rounded-full border border-red-600/30 bg-red-950/20 font-serif text-lg sm:text-2xl font-black italic tracking-wider text-red-400"
+            className="px-4 py-2 sm:px-6 sm:py-3 rounded-full border border-red-600/30 bg-red-950/20 font-serif text-base sm:text-2xl font-black italic tracking-wider text-red-400"
           >
             {stmt}
           </motion.div>
@@ -54,7 +54,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="lg:col-span-8 space-y-8 text-base sm:text-xl leading-relaxed text-neutral-300 font-sans"
         >
-          <div className="p-8 rounded-2xl border border-red-600/40 bg-gradient-to-r from-[#16090c] to-[#0d0d12] text-white font-serif font-bold text-xl sm:text-3xl border-l-8 border-l-red-600 shadow-[0_10px_30px_rgba(220,38,38,0.15)] leading-snug">
+          <div className="p-5 sm:p-8 rounded-2xl border border-red-600/40 bg-gradient-to-r from-[#16090c] to-[#0d0d12] text-white font-serif font-bold text-lg sm:text-3xl border-l-4 sm:border-l-8 border-l-red-600 shadow-[0_10px_30px_rgba(220,38,38,0.15)] leading-snug">
             "I’m Durga S., a full-stack developer, product builder, and CTO & Co-Founder."
           </div>
 

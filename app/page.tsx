@@ -48,7 +48,7 @@ export default function Home() {
           items={[
             "FULL-STACK DEVELOPER",
             "CTO & CO-FOUNDER",
-            "DEVOPS ENGINEER — NEXT TARGET",
+            "DEVOPS ENGINEER",
             "I BUILD",
             "I LEAD",
             "I SHIP",

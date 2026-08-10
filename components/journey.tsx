@@ -51,9 +51,9 @@ const chapters = [
     number: "03",
     title: "DEVOPS ENGINEER",
     company: "Infrastructure & Automation",
-    period: "NEXT TARGET / CURRENT JOURNEY",
+    period: "DEVOPS & CLOUD JOURNEY",
     icon: Server,
-    badge: "NEXT TARGET / CURRENT FOCUS",
+    badge: "CURRENT FOCUS & JOURNEY",
     badgeColor: "border-red-600 bg-red-600 text-white font-bold animate-pulse",
     tags: [
       "Linux",
@@ -116,9 +116,9 @@ export default function Journey() {
       </div>
 
       {/* Animated Vertical Progression Line & Cards */}
-      <div className="relative pl-6 md:pl-12 space-y-16">
+      <div className="relative pl-6 sm:pl-8 md:pl-12 space-y-16">
         {/* Continuous Red Line Guide */}
-        <div className="absolute top-0 left-2 md:left-4 bottom-0 w-[2px] bg-white/10">
+        <div className="absolute top-0 left-2 sm:left-3 md:left-4 bottom-0 w-[2px] bg-white/10">
           <motion.div
             style={{ height: lineHeight }}
             className="w-full bg-gradient-to-b from-red-600 via-red-500 to-rose-500 origin-top"
@@ -138,7 +138,7 @@ export default function Journey() {
             >
               {/* Timeline Bullet Node */}
               <div
-                className={`absolute -left-[33px] md:-left-[57px] top-6 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${
+                className={`absolute -left-[31px] sm:-left-[35px] md:-left-[57px] top-6 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${
                   chap.isTarget
                     ? "border-red-600 bg-red-600 text-white shadow-[0_0_20px_rgba(220,38,38,0.8)]"
                     : "border-red-600 bg-[#08080a] text-red-500"
@@ -149,7 +149,7 @@ export default function Journey() {
 
               {/* Card Container */}
               <div
-                className={`p-6 sm:p-10 md:p-12 rounded-3xl border transition-all duration-500 ${
+                className={`p-5 sm:p-10 md:p-12 rounded-3xl border transition-all duration-500 ${
                   chap.isTarget
                     ? "bg-gradient-to-b from-[#180a0e] via-[#0d0d12] to-[#0d0d12] border-red-600/60 shadow-[0_15px_50px_rgba(220,38,38,0.2)]"
                     : "bg-[#0d0d12]/90 border-white/10 hover:border-white/20"
@@ -226,7 +226,7 @@ export default function Journey() {
           <span className="text-white font-bold">CTO & CO-FOUNDER</span>
           <ArrowRight className="w-4 h-4 text-red-500" />
           <span className="text-red-400 font-bold px-3 py-1 rounded bg-red-950 border border-red-600/40">
-            DEVOPS ENGINEER — NEXT TARGET
+            DEVOPS ENGINEER
           </span>
         </div>
       </div>

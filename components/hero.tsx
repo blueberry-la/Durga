@@ -97,7 +97,7 @@ export default function Hero() {
             <span className="text-neutral-300">CTO & CO-FOUNDER</span>
             <span className="text-red-600">•</span>
             <span className="px-3 py-1 rounded bg-red-600/20 text-red-400 border border-red-600/40 text-xs sm:text-sm font-semibold">
-              DEVOPS ENGINEER — NEXT TARGET
+              DEVOPS ENGINEER
             </span>
           </div>
 
@@ -111,12 +111,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.45 }}
-          className="flex flex-wrap items-center gap-4 pt-8"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-8 w-full sm:w-auto"
         >
           <a
             href="#projects"
             data-cursor="DISCOVER WORK"
-            className="group relative inline-flex items-center gap-3 px-9 py-4 rounded-xl bg-red-600 text-white font-mono text-xs font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:bg-red-700 hover:shadow-[0_0_40px_rgba(220,38,38,0.6)]"
+            className="group relative inline-flex items-center justify-center gap-3 px-6 sm:px-9 py-4 rounded-xl bg-red-600 text-white font-mono text-xs font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:bg-red-700 hover:shadow-[0_0_40px_rgba(220,38,38,0.6)] w-full sm:w-auto"
           >
             <span>VIEW MY WORK</span>
             <ArrowDownRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:translate-y-1" />
@@ -127,7 +127,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             data-cursor="LINKEDIN PROFILE"
-            className="group inline-flex items-center gap-3 px-9 py-4 rounded-xl border border-white/15 bg-white/5 text-white font-mono text-xs font-bold uppercase tracking-widest backdrop-blur-sm transition-all duration-300 hover:border-red-600/60 hover:bg-white/10"
+            className="group inline-flex items-center justify-center gap-3 px-6 sm:px-9 py-4 rounded-xl border border-white/15 bg-white/5 text-white font-mono text-xs font-bold uppercase tracking-widest backdrop-blur-sm transition-all duration-300 hover:border-red-600/60 hover:bg-white/10 w-full sm:w-auto"
           >
             <span>MY LINKEDIN</span>
             <ArrowUpRight className="w-4 h-4 text-red-500 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -166,10 +166,10 @@ export default function Hero() {
 
         <div className="flex items-start gap-4">
           <div className="p-2.5 rounded-lg bg-red-950/40 border border-red-600/40 text-red-400">
-            <span className="font-mono font-bold text-xs">TARGET</span>
+            <span className="font-mono font-bold text-xs">DEVOPS</span>
           </div>
           <div>
-            <div className="font-mono text-xs text-red-400 uppercase tracking-wider">03 / NEXT TARGET</div>
+            <div className="font-mono text-xs text-red-400 uppercase tracking-wider">03 / DEVOPS FOCUS</div>
             <div className="font-serif font-bold text-white text-lg">DevOps & Cloud</div>
             <p className="text-xs text-neutral-400 mt-0.5">Linux, Containers, CI/CD & Automation</p>
           </div>

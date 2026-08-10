@@ -36,34 +36,34 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Left Column: Dramatic Giant Headline */}
         <div className="lg:col-span-6 space-y-8">
-          <h2 className="font-display text-[clamp(4.2rem,13vw,13rem)] font-extrabold tracking-tighter uppercase text-white leading-[0.85] select-none">
+          <h2 className="font-display text-[clamp(2.8rem,9.5vw,11rem)] font-extrabold tracking-tighter uppercase text-white leading-[0.85] select-none break-words">
             LET'S <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-white">
               BUILD.
             </span>
           </h2>
 
-          <p className="text-neutral-300 font-sans text-xl sm:text-2xl leading-relaxed max-w-md">
+          <p className="text-neutral-300 font-sans text-lg sm:text-2xl leading-relaxed max-w-md">
             Open to DevOps, Cloud and Engineering opportunities.
           </p>
 
           <div className="space-y-4 pt-6 border-t border-white/10">
             {/* Email Box */}
-            <div className="p-5 rounded-2xl border border-white/10 bg-[#0d0d12] flex items-center justify-between gap-4">
+            <div className="p-4 sm:p-5 rounded-2xl border border-white/10 bg-[#0d0d12] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-xl bg-red-950/40 border border-red-600/30 text-red-400">
+                <div className="p-3 rounded-xl bg-red-950/40 border border-red-600/30 text-red-400 shrink-0">
                   <Mail className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <div className="font-mono text-[10px] text-neutral-500 uppercase">DIRECT EMAIL</div>
-                  <div className="font-mono text-base text-white font-bold">d66190721@gmail.com</div>
+                  <div className="font-mono text-xs sm:text-base text-white font-bold truncate sm:overflow-visible">d66190721@gmail.com</div>
                 </div>
               </div>
 
               <button
                 onClick={handleCopyEmail}
                 data-cursor="COPY EMAIL"
-                className="flex items-center gap-1.5 px-4 py-2 rounded-xl border border-white/10 bg-white/5 hover:border-red-500 text-xs font-mono text-neutral-300 hover:text-white transition-all"
+                className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl border border-white/10 bg-white/5 hover:border-red-500 text-xs font-mono text-neutral-300 hover:text-white transition-all w-full sm:w-auto"
               >
                 {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
                 <span>{copied ? "COPIED!" : "COPY"}</span>
@@ -76,19 +76,19 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="LINKEDIN"
-              className="group p-5 rounded-2xl border border-white/10 bg-[#0d0d12] flex items-center justify-between gap-4 hover:border-red-600/60 transition-all"
+              className="group p-4 sm:p-5 rounded-2xl border border-white/10 bg-[#0d0d12] flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-red-600/60 transition-all"
             >
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-xl bg-neutral-900 border border-white/10 text-red-500">
+                <div className="p-3 rounded-xl bg-neutral-900 border border-white/10 text-red-500 shrink-0">
                   <Linkedin className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <div className="font-mono text-[10px] text-neutral-500 uppercase">LINKEDIN PROFILE</div>
-                  <div className="font-mono text-base text-white font-bold">linkedin.com/in/durgasofficial</div>
+                  <div className="font-mono text-xs sm:text-base text-white font-bold truncate sm:overflow-visible">linkedin.com/in/durgasofficial</div>
                 </div>
               </div>
 
-              <ArrowUpRight className="w-5 h-5 text-red-500 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="w-5 h-5 text-red-500 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 self-end sm:self-center" />
             </a>
 
             {/* Location Box */}

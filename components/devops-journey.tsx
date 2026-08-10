@@ -30,7 +30,7 @@ export default function DevOpsJourney() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
         <div>
           <div className="font-mono text-xs font-bold text-red-500 tracking-widest uppercase mb-3">
-            08 / THE NEXT CHAPTER
+            08 / DEVOPS JOURNEY
           </div>
           <h2 className="font-serif section-clamp-serif font-black tracking-tight uppercase text-white">
             FROM APPLICATIONS<span className="text-red-600 font-sans">.</span> <br />
@@ -40,7 +40,7 @@ export default function DevOpsJourney() {
           </h2>
           <div className="mt-4 flex items-center gap-3">
             <span className="px-4 py-1.5 rounded-full bg-red-600 text-white font-mono text-xs font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(220,38,38,0.6)]">
-              DEVOPS ENGINEER — NEXT TARGET
+              DEVOPS ENGINEER
             </span>
           </div>
         </div>
@@ -60,16 +60,16 @@ export default function DevOpsJourney() {
       </div>
 
       {/* Narrative Manifesto Quote Box */}
-      <div className="p-8 md:p-12 rounded-3xl border border-red-600/40 bg-gradient-to-r from-[#190a0e] via-[#0d0d12] to-[#0d0d12] mb-20 relative shadow-[0_15px_40px_rgba(220,38,38,0.1)]">
-        <div className="flex items-start gap-5">
-          <div className="p-4 rounded-2xl bg-red-600 text-white shrink-0 shadow-lg">
-            <Terminal className="w-7 h-7" />
+      <div className="p-5 sm:p-8 md:p-12 rounded-3xl border border-red-600/40 bg-gradient-to-r from-[#190a0e] via-[#0d0d12] to-[#0d0d12] mb-20 relative shadow-[0_15px_40px_rgba(220,38,38,0.1)]">
+        <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-red-600 text-white shrink-0 shadow-lg">
+            <Terminal className="w-6 h-6 sm:w-7 sm:h-7" />
           </div>
           <div className="space-y-3">
-            <h3 className="font-serif font-bold text-2xl sm:text-3xl text-white uppercase tracking-wide">
-              WHY DEVOPS IS MY NEXT DESTINATION:
+            <h3 className="font-serif font-bold text-xl sm:text-3xl text-white uppercase tracking-wide">
+              WHY DEVOPS IS MY CORE FOCUS:
             </h3>
-            <p className="text-neutral-200 font-sans text-lg sm:text-xl leading-relaxed max-w-5xl">
+            <p className="text-neutral-200 font-sans text-base sm:text-xl leading-relaxed max-w-5xl">
               "My development background gives me an understanding of how applications are built. My DevOps journey is about understanding what happens after the code is written — how applications are deployed, automated, monitored and operated reliably."
             </p>
           </div>
@@ -123,7 +123,7 @@ export default function DevOpsJourney() {
         >
           <div>
             <div className="font-mono text-xs font-bold text-red-400 uppercase tracking-widest mb-2">
-              TARGET DESTINATION
+              FOCUS DESTINATION
             </div>
             <h4 className="font-serif text-2xl font-black text-white italic mb-2">
               DEVOPS ENGINEER
@@ -133,7 +133,7 @@ export default function DevOpsJourney() {
             </p>
           </div>
           <div className="pt-4 border-t border-red-600/40 mt-4 flex items-center justify-between">
-            <span className="font-mono text-[10px] text-red-300 uppercase">NEXT CAREER TARGET</span>
+            <span className="font-mono text-[10px] text-red-300 uppercase">DEVOPS CAREER FOCUS</span>
             <span className="h-2 w-2 rounded-full bg-red-500 animate-ping" />
           </div>
         </motion.div>

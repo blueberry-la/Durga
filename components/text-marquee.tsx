@@ -11,7 +11,7 @@ interface TextMarqueeProps {
 const defaultItems = [
   "FULL-STACK PHP DEVELOPER",
   "CTO & CO-FOUNDER",
-  "DEVOPS ENGINEER — NEXT TARGET",
+  "DEVOPS & CLOUD ENGINEER",
   "I BUILD",
   "I LEAD",
   "I LEARN",

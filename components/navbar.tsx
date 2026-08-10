@@ -125,7 +125,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-x-4 top-20 z-40 p-6 rounded-3xl bg-[#0d0d12]/95 border border-white/10 backdrop-blur-2xl md:hidden shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
+            className="fixed inset-x-4 top-20 z-40 p-6 rounded-3xl bg-[#0d0d12]/95 border border-white/10 backdrop-blur-2xl md:hidden shadow-[0_20px_50px_rgba(0,0,0,0.9)] max-h-[calc(100vh-6rem)] overflow-y-auto"
           >
             <div className="flex flex-col gap-4">
               <div className="text-[10px] font-mono text-red-500 uppercase tracking-widest border-b border-white/5 pb-2">

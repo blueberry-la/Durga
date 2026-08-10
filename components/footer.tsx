@@ -17,31 +17,33 @@ export default function Footer() {
             Durga S.
           </div>
           <div className="font-mono text-xs text-neutral-400">
-            FULL-STACK DEVELOPER • CTO & CO-FOUNDER • DEVOPS ENGINEER — NEXT TARGET
+            FULL-STACK DEVELOPER • CTO & CO-FOUNDER • DEVOPS ENGINEER
           </div>
         </div>
 
         {/* Copyright & Social */}
-        <div className="flex flex-wrap items-center gap-6 font-mono text-xs text-neutral-400">
-          <span>© 2026 Durga S.</span>
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 font-mono text-xs text-neutral-400 text-center">
+          <span>© 2026 Durga S. All rights reserved.</span>
 
-          <a
-            href="https://www.linkedin.com/in/durgasofficial"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 text-white hover:text-red-500 transition-colors"
-          >
-            <Linkedin className="w-3.5 h-3.5" />
-            <span>LINKEDIN</span>
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/in/durgasofficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-white hover:text-red-500 transition-colors"
+            >
+              <Linkedin className="w-3.5 h-3.5 text-red-500" />
+              <span>LINKEDIN</span>
+            </a>
 
-          <button
-            onClick={scrollToTop}
-            className="p-3 rounded-full border border-white/10 bg-white/5 hover:border-red-500 hover:text-red-500 transition-all ml-2"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="w-4 h-4" />
-          </button>
+            <button
+              onClick={scrollToTop}
+              className="p-3 rounded-full border border-white/10 bg-white/5 hover:border-red-500 hover:text-red-500 transition-all"
+              aria-label="Scroll to top"
+            >
+              <ArrowUp className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
     </footer>
