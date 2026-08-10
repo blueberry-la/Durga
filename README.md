@@ -1,6 +1,6 @@
 <div align="center">
 
-  # ⚡ DURGA S. — EDITORIAL ENGINEERING & DEVOPS PORTFOLIO
+  # ⚡ DURGA S. — PORTFOLIO
 
   <p align="center">
     <b>A high-performance, editorial-grade engineering portfolio built with Next.js 15, React 19, TypeScript, and Framer Motion.</b>
